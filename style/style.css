@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+*:focus {
+    outline: none;
+}
+
+:root {
+    --main-color: #2196f3;
+    --gren-color: #009688;
+    --reed-color: #B31312;
+    --main-color-alt: #18629e;
+}
+
+/* Start Game Style */
+.game {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.game .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+/* Game Header */
+.game .game-header {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Game Info */
+.game .game-container .game-info {
+    width: 43%;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.game .game-container span {
+    color: var(--gren-color);
+    text-transform: capitalize;
+}
+
+/* Start Game */
+.game .game-container .start-game {
+    width: 43%;
+}
+
+.game .game-container .start-game span {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .3px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--gren-color);
+}
+
+/* The Word Style */
+.game .game-container .the-word {
+    width: 43%;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 40px;
+    padding: 2px;
+    color: var(--main-color);
+    background-color: white;
+}
+
+/* Input Style */
+.game .game-container .input-word {
+    width: 43%;
+    padding: 8px;
+    border-radius: 2px;
+    border: 2px solid var(--main-color-alt);
+    transition: .3s ease-out;
+}
+
+.game .game-container .input-word:hover,
+.game .game-container .input-word:focus {
+    border-color: var(--main-color);
+}
+
+/* upcoming Word */
+.game .game-container .upcoming-word {
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    gap: 10px;
+}
+
+.game .game-container .upcoming-word span {
+    color: white;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    padding: 5px;
+}
+
+/* Footer Game */
+.game .game-container .game-footer {
+    display: flex;
+    width: 43%;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.game .game-container .game-footer .game-time {
+    flex: 1;
+}
+
+.game .game-container .game-footer .total-game {
+    flex: 1;
+    text-align: right;
+}
+
+/* Select Level */
+select {
+    width: 100px;
+    text-align: center;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
